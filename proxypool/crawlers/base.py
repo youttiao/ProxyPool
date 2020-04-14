@@ -128,7 +128,7 @@ class BaseCrawler(object):
     @retry(stop_max_attempt_number=3, retry_on_result=lambda x: x is None)
     def fetch(self, url, **kwargs):
         try:
-            response = requests.get(url, headers=gen_headers() , **kwargs)
+            response = requests.get(url, headers=gen_headers(), **kwargs)
             if response.status_code == 200:
                 return response.text
         except requests.ConnectionError:

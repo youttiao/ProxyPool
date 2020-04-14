@@ -54,6 +54,7 @@ CYCLE_GETTER = env.int('CYCLE_GETTER', 100)
 
 # definition of tester
 TEST_URL = env.str('TEST_URL', 'http://www.baidu.com')
+#TEST_URL = env.str('TEST_URL', 'https://www.shilladfs.com/estore/kr/zh')
 TEST_TIMEOUT = env.int('TEST_TIMEOUT', 10)
 TEST_BATCH = env.int('TEST_BATCH', 20)
 # TEST_HEADERS = env.json('TEST_HEADERS', {
